@@ -82,7 +82,7 @@ const VoteButtons = ({ post }) => {
           aria-label='Upvote'
           icon={<FiArrowUp />}
           onClick={() => handleClick('upvote')} 
-          isLoading={isVoting}
+          
           isDisabled={checkIfPostIfAlreadyVoted()}
         />
         <Text bg='gray.100' rounded='md' w='100%' p={1}>
@@ -96,7 +96,7 @@ const VoteButtons = ({ post }) => {
           aria-label='Downvote'
           icon={<FiArrowDown />}
           onClick={() => handleClick('downvote')}
-          isLoading={isVoting}
+         
           isDisabled={checkIfPostIfAlreadyVoted()}
         />
         <Text bg='gray.100' rounded='md' w='100%' p={1}>
